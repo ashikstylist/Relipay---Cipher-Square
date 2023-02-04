@@ -791,3 +791,7 @@ div:has(> .ex-card-content) > img {
   color: #ffffff;
   opacity: 0.5;
 }
+
+.promo {
+  width: 50%;
+}

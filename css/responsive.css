@@ -134,4 +134,8 @@
   div:has(> .fair-type) {
     width: 100%;
   }
+
+  .promo {
+    width: 100% !important;
+  }
 }
