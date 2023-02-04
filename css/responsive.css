@@ -138,4 +138,35 @@
   .promo {
     width: 100% !important;
   }
+
+  .exchange-arrow {
+    position: absolute;
+    margin: auto;
+    bottom: -30px;
+    top: auto;
+    right: 45%;
+    text-align: center;
+    transform: rotate(90deg);
+    background-color: white;
+    z-index: 4;
+    border-radius: 50px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .exchange-arrow::after {
+    display: block;
+    content: " ";
+    height: 55px;
+    top: -5px;
+    position: absolute;
+    width: 15px;
+    right: 0px;
+    left: 17px;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+
+  .mini-card {
+    height: 125px !important;
+  }
 }
