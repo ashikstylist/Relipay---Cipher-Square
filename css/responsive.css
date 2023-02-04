@@ -1,0 +1,137 @@
+@media only screen and (max-width: 991px) {
+  .navbar > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-banner > div {
+    background-size: cover !important;
+  }
+
+  .dashboard-container {
+    padding: 0rem 1rem;
+  }
+
+  .dashboard-card {
+    height: max-content !important;
+    padding-bottom: 2rem;
+  }
+
+  .mini-card > img {
+    top: 0px;
+    left: 0px;
+    right: -80% !important;
+  }
+
+  .explore-section {
+    height: max-content !important;
+    padding: 10px;
+  }
+
+  .explore-section > div > div {
+    justify-content: flex-start !important;
+    padding: 1rem;
+  }
+
+  .explore-middle {
+    position: relative;
+    margin: auto;
+  }
+
+  .exp-bord-e {
+    border-right: 0px !important;
+  }
+
+  .exp-bord-s {
+    border-left: 0px !important;
+  }
+
+  .ex-off-parent > div:nth-child(2) div {
+    text-align: left;
+    font: normal normal 600 12px/27px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 8px 10px 0px 14px;
+    padding: 0px 0px 8px 0px;
+  }
+
+  .ex-off-tab-active {
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #33ab51 !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid #33ab51;
+    margin: 8px 10px 0px 14px;
+    padding: 0px 0px 8px 0px;
+  }
+
+  .ex-card-content > p + div > div:nth-child(2) {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .offer-card {
+    margin-top: 20px;
+  }
+
+  .travel-card {
+    max-width: 326px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .footer {
+    height: max-content;
+  }
+
+  .payment-method {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+  }
+
+  .payment-method img {
+    padding-right: 10px;
+  }
+
+  .payment-method + div + div {
+    text-align: start;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 0.5;
+    padding-bottom: 30px;
+  }
+
+  .check-outer {
+    max-width: 760px;
+    width: auto !important;
+    margin-top: 10px;
+    height: max-content !important;
+  }
+
+  .checkmark {
+    margin: 20px;
+  }
+
+  div:has(> .check-container input:checked) {
+    background: #cfe6fc 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .check-container > span:nth-child(1) {
+    width: 230px;
+  }
+
+  .web-checkIn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  div:has(> .fair-type) {
+    width: 100%;
+  }
+}

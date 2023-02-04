@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.nav-links {
+  text-align: left;
+  font: normal normal normal 16px/25px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.arrow-down {
+  width: 15px;
+  height: 15px;
+}
+
+.phone-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.brand-logo {
+  width: 147px;
+  height: 50px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.navbar > div {
+  padding-left: 50px;
+  padding-right: 64px;
+}
+
+.navbar {
+  height: 90px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.menu-content > div {
+  width: 200px;
+  cursor: pointer;
+}
+
+.home-banner {
+  height: 354px;
+  width: 100%;
+  background: transparent linear-gradient(90deg, #0077ac 0%, #112e55 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.home-banner > div {
+  width: auto;
+  height: 362px;
+  position: relative;
+  top: 50px;
+  background: transparent url("../img/banner.png") no-repeat padding-box;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+}
+
+.nav-menu {
+  height: 45px;
+  width: 100%;
+  position: absolute;
+}
+
+.custom-menu-btn {
+  background: transparent;
+  text-transform: uppercase;
+  width: max-content;
+  margin-top: -5px;
+}
+
+.nav-menu {
+  background: transparent;
+}
+
+.nav-menu > div {
+  background: transparent;
+}
+
+.menu-icons {
+  opacity: 0;
+  width: 24px;
+  height: 25px;
+  bottom: 40px;
+  position: absolute;
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.custom-menu-btn:hover img {
+  opacity: 1;
+  bottom: 55px;
+}
+
+.nav-menu-active {
+  background: white !important;
+  color: black !important;
+}
+
+.nav-menu-active > .menu-icons {
+  opacity: 1 !important;
+  bottom: 55px !important;
+}
+
+.dashboard-container {
+  max-width: 1364px;
+  height: max-content;
+  position: relative;
+  margin: auto;
+  top: -190px;
+}
+
+.nav-container {
+  max-width: 1364px;
+  height: max-content;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.dashboard-card {
+  height: 295px;
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #0000000d !important;
+  border-radius: 15px !important;
+  opacity: 1;
+  border: none !important;
+}
+
+.mini-card {
+  height: 112px;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  opacity: 1;
+  padding: 15px 22px 15px 22px;
+}
+
+.mini-card > span:nth-child(1) {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #707070;
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.mini-card > span:nth-child(2) {
+  font-size: 28px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.mini-card > span:nth-child(3),
+.mini-card > span:nth-child(2) > span {
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.mini-card > img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  top: 10px;
+  left: 0px;
+  right: -75% !important;
+}
+
+.mini-card .text-muted {
+  font-size: 15px !important;
+  width: 90%;
+  color: #707070 !important;
+  font-weight: normal !important;
+}
+
+.mini-card-shadow {
+  box-shadow: 0px 0px 20px #0000001a;
+}
+
+div:has(> .dash-card-success-btn) {
+  width: 230px;
+  height: 56px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -25px;
+}
+
+.dash-card-success-btn {
+  cursor: pointer;
+  width: 230px;
+  height: 56px;
+  background: transparent linear-gradient(270deg, #33ab51 0%, #2dca54 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 28px;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.dash-card-toggle {
+  margin-top: -40px;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background: transparent linear-gradient(180deg, #0077ac 0%, #101f33 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #0000000d;
+  border-radius: 30px;
+  opacity: 1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #319ece;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dash-card-toggle-active {
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  color: #000000;
+}
+
+/* Explore Section Starts */
+
+.explore-header {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.explore-header > span {
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.explore-header > img {
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.explore-section {
+  height: 74px;
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #0000001a !important;
+  border-radius: 10px !important;
+  opacity: 1;
+  margin-top: 18px;
+  border: none !important;
+}
+
+.explore-icon {
+  width: 36px;
+  height: 36px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.explore-icon > img {
+  height: 20px;
+  width: 25px;
+}
+
+.explore-icon + span,
+.explore-icon + div > span {
+  font-weight: bold;
+}
+
+.explore-icon + div span:nth-last-child(1) {
+  font: normal normal normal 13px/20px Poppins;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.explore-middle {
+  background: #fef6e8 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.explore-middle > div > img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.explore-middle > div + div > span:nth-child(1) {
+  font-weight: bold;
+}
+
+.explore-middle > div + div > span:nth-last-child(1) {
+  font: normal normal normal 13px/20px Poppins;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.exp-bord-e {
+  border-right: 2px solid #cdcdcd;
+}
+
+.exp-bord-s {
+  border-left: 2px solid #cdcdcd;
+}
+
+/* Explore Section Ends */
+
+/* Custom CheckBox */
+.check-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: center;
+}
+
+.check-container > span:nth-child(1) {
+  width: 92px;
+  padding-right: 9px;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  left: 20px;
+}
+
+.checkmark {
+  /* position: absolute;
+    top: 0px;
+    left: 12px;
+    bottom: 0; */
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50px;
+  border: 1px solid #707070;
+}
+
+.check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check-container input:checked ~ .checkmark {
+  background: #33ab51 0% 0% no-repeat padding-box;
+}
+
+.checkmark:after {
+  content: "";
+  /* position: absolute; */
+  display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+div:has(> .check-container input:checked) {
+  background: #cfe6fc 0% 0% no-repeat padding-box;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.check-container .checkmark:after {
+  /* left: 7px;
+    top: 3.5px; */
+  margin-left: 7px;
+  margin-top: 3.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Custom Check Ends */
+
+.check-outer {
+  width: 760px;
+  height: 56px;
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fair-type {
+  width: 67px;
+  height: 39px;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+div:has(> .fair-type) {
+  width: 67px;
+  height: 39px;
+  margin-right: 10px;
+}
+
+.web-checkIn {
+  width: 196px;
+  height: 56px;
+  background: #0077ac17 0% 0% no-repeat padding-box;
+  border: 2px solid #0077ac;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.web-checkIn > img {
+  width: 25px;
+  height: 22px;
+}
+
+.web-checkIn > span {
+  padding-left: 10px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.ex-off-parent > span:nth-child(1) {
+  text-align: left;
+  font: normal normal 600 30px/46px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.ex-off-parent > div:nth-child(2) div {
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 10px 10px 0px 20px;
+  padding: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.ex-off-tab-active {
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #33ab51 !important;
+  text-transform: uppercase;
+  border-bottom: 2px solid #33ab51;
+  margin: 10px 10px 0px 20px;
+  padding: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.ex-off-parent > div:nth-child(3) > span {
+  text-align: left;
+  font: normal normal 600 16px/25px Poppins;
+  letter-spacing: 0px;
+  color: #0077ac;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.scroller {
+  background: #0077ac17 0% 0% no-repeat padding-box;
+  border: 2px solid #0077ac;
+  border-radius: 15px;
+  width: 68px;
+  height: 30px;
+}
+
+.scroller span {
+  color: #200e32;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.ex-off-parent + hr {
+  margin-top: 0px;
+}
+
+.offer-card {
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 0px 20px #0000000d !important;
+  border-radius: 15px !important;
+  border: none !important;
+  padding: 20px;
+}
+
+.ex-card-content > span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.ex-card-content > p {
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.ex-card-content > p + div > div:nth-child(1) {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #0077ac;
+  font-weight: bold;
+}
+
+.ex-card-content > p + div > div:nth-child(2) {
+  cursor: pointer;
+  border: 1px dashed #cdcdcd;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.ex-card-content > p + div > div:nth-child(2) > span {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 10px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+div:has(> .ex-card-content) > img {
+  width: 132px;
+  height: 132px;
+  padding-left: 10px;
+}
+
+.offer-card > div:nth-last-child(1) {
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.exclusive {
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  position: absolute;
+  top: 140px;
+  left: 53px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.travel-card {
+  width: 100%;
+  height: 390px;
+  border-radius: 15px !important;
+  border: none !important;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-1 {
+  background-image: url("../img/Rectangle\ 24431.png");
+}
+
+.banner-2 {
+  background-image: url("../img/Rectangle\ 24432.png");
+}
+
+.banner-3 {
+  background-image: url("../img/Rectangle\ 24434.png");
+}
+
+.banner-4 {
+  background-image: url("../img/Rectangle\ 24436.png");
+}
+
+.travel-card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 390px;
+  border-radius: 15px !important;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    black 100%
+  );
+}
+
+.travel-card > div {
+  z-index: 5;
+  height: 50%;
+  width: 100%;
+  border-radius: 15px !important;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.travel-card > div > div:nth-child(1) > span {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.travel-card > div > div:nth-child(1) > p {
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: light;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.travel-card > div > div:nth-last-child(1) > div > span:first-child,
+.travel-card > div > div:nth-last-child(1) > span {
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #0ab4ff;
+  text-transform: uppercase;
+}
+
+.travel-card > div > div:nth-last-child(1) > div > span:last-child {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #cdcdcd;
+}
+
+.travel-badge {
+  background: #90ddff 0% 0% no-repeat padding-box;
+  border: 1px solid #00000000;
+  border-radius: 14px;
+  width: max-content;
+  margin: 15px;
+}
+
+.footer {
+  height: 487px;
+  width: 100%;
+  background: #101f33 0% 0% no-repeat padding-box;
+}
+
+.scroll-to-top {
+  background: transparent linear-gradient(358deg, #0077ac 0%, #194c90 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  width: 53px;
+  height: 53px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  margin: auto;
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scroll-to-top > img {
+  width: 3rem;
+}
+
+.footer-container {
+  max-width: 1527px;
+  margin: auto;
+}
+
+.footer-container > div > div > p {
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  line-height: 30px;
+  max-width: 300px;
+}
+
+.footer-center > div > b,
+.footer-container > div > div:nth-last-child(1) > b {
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-center > div > p {
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 10px !important;
+  cursor: pointer;
+}
+
+.gp-button,
+.sc-links {
+  cursor: pointer;
+}
+
+.payment-method img {
+  max-width: 5rem;
+  padding-right: 10px;
+}
+
+.payment-method {
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.payment-method + div > div > span:first-child {
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.payment-method + div > div > span:last-child {
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.payment-method + div + div {
+  text-align: start;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 0.5;
+}

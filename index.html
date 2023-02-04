@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relipay</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- Nav Bar Starts -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="brand-logo" src="img/logo.svg" alt="logo" >
+            </a>
+            <div class="menu-content d-none d-lg-flex justify-content-end ">
+                <div class="d-flex align-items-center justify-content-evenly  me-3" >
+                    <img class="phone-icon" src="img/icons/1.svg" alt="phone" />
+                    <span class="nav-links">+91 8957022730</span>
+                    <img class="arrow-down" src="img/icons/arrow-down.png" alt="dropdown" >
+                </div>
+                <div class="d-flex align-items-center  justify-content-evenly" >
+                    <img class="profile-icon" src="img/profile-thumb.png" alt="profile" >
+                    <span  class="nav-links">My Account</span>
+                    <img class="arrow-down" src="img/icons/arrow-down.png" alt="dropdown" >
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img style="max-width: 2rem;" src="./img/icons/hamburger.png" alt="Hamburger" >
+            </button>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header px-4 mt-2">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img style="max-width: 5rem;" src="./img/logo.svg" alt="" srcset="">
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-content d-flex d-lg-none flex-column align-items-end">
+                <div class="d-flex align-items-center  justify-content-evenly" >
+                    <img class="profile-icon" src="img/profile-thumb.png" alt="profile" >
+                    <span  class="nav-links">My Account</span>
+                    <img class="arrow-down" src="img/icons/arrow-down.png" alt="dropdown" >
+                </div>
+                <br />
+                <div class="d-flex align-items-center justify-content-evenly  " >
+                    <img class="phone-icon" src="img/icons/1.svg" alt="phone" />
+                    <span class="nav-links">+91 8957022730</span>
+                    <img class="arrow-down" src="img/icons/arrow-down.png" alt="dropdown" >
+                </div>
+            </div>
+            <br /><hr /><br />
+            <div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Flight</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Hotels</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Flight + Hotels</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Train</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Bus</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Holiday</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Cabs</span> 
+                </div>
+                <div class="  btn btn-outline-success w-100 px-3 mb-2">
+                    <span class="mt-1">Cruise</span> 
+                </div>
+                 <div class="btn-group w-100">
+                    <button type="button" class="btn btn-outline-success w-100 px-3 mb-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                      <li><a class="dropdown-item" href="#">Charters</a></li>
+                      <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                      <li><a class="dropdown-item" href="#">Offers</a></li>
+                      <li><a class="dropdown-item" href="#">Corporate Travels</a></li>
+                      <li><a class="dropdown-item" href="#">Agent Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Nav Bar Ends -->
+
+    <!-- Menu Bar Starts -->
+    <div class="d-none d-lg-block nav-menu nav-container">
+        <div class="h-100">
+            <div class="d-flex">
+                <div class="  btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Flight</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Hotels</span> 
+                </div>
+                <div class="btn nav-menu-active btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Flight + Hotels</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Train</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Bus</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Holiday</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Cabs</span> 
+                </div>
+                <div class="btn btn-outline-light d-flex flex-column align-items-center px-3 custom-menu-btn me-1">
+                    <img class="menu-icons" src="./img/icons/noun-flight-1606524.svg" alt="">
+                    <span class="mt-1">Cruise</span> 
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light custom-menu-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Charters</a></li>
+                      <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                      <li><a class="dropdown-item" href="#">Offers</a></li>
+                      <li><a class="dropdown-item" href="#">Corporate Travels</a></li>
+                      <li><a class="dropdown-item" href="#">Agent Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Bar Ends -->
+
+    <!-- Background Banner Starts -->
+    <div class="home-banner"><div></div></div>
+    <!-- Background Banner Ends -->
+
+     
+    <div class="dashboard-container">
+        <!-- Dashboard Card Starts -->
+        <div class="card dashboard-card" >
+            <div class="card-body">
+
+                <div class="d-flex">
+                    <div class="dash-card-toggle d-flex align-items-center justify-content-center">
+                        One-way
+                    </div>
+                    <div class="dash-card-toggle dash-card-toggle-active  d-flex align-items-center justify-content-center">
+                        Round Trip
+                    </div>
+                </div>
+
+                <div class="row  mt-4">
+                    <div class="col-lg-3 col-12 mb-3 mb-lg-0">
+                        <div class="card mini-card">
+                            <span>From</span>
+                            <span>Delhi</span>
+                            <span>[DEL] Indira Gandhi International Airport</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 mb-3 mb-lg-0">
+                        <div class="card mini-card">
+                                <span>To</span>
+                                <span>Mumbai</span>
+                                <span>[BOM] Chhatrapati Shivaji International Airport</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 mb-3 mb-lg-0">
+                        <div class="card mini-card">
+                                <span class="text-dark">Departure Date</span>
+                                <span>16 <span>Sep'2022</span></span>
+                                <span>Friday</span>
+                            <img src="./img/icons/noun-calendar-5179614.svg" alt="Calendar-Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 mb-3 mb-lg-0">
+                        <div class="card mini-card">
+                            <span class="text-dark">Return Date</span>
+                            <span class="text-muted">Book a round trip to save more</span>
+                            <img src="./img/icons/noun-calendar-5179614.svg" alt="Calendar-Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 mb-3 mb-lg-0">
+                        <div class="card mini-card mini-card-shadow">
+                            <span>Traveller & Class</span>
+                            <span>1 <span>Traveller(s)</span></span>
+                            <span>Economy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block d-lg-flex mt-4">
+                    <div>
+                        <span class="fair-type">Select A Fare Type:</span>
+                    </div>
+                    <div class="check-outer">
+                        <div class="row w-100 h-100 d-block d-lg-flex justify-content-center align-items-center">
+                            <div class="col-2 m-0 p-0 h-100 d-grid">
+                                    <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                        <span>  Regular Fares </span>
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                            </div>
+                            <div class="col-2 m-0 p-0  h-100 d-grid">
+                                <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                    <span>Armed Forces Fares</span> 
+                                    <input type="radio"  name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-2 m-0 p-0  h-100 d-grid">
+                                <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                    <span>Student Fares</span>
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-2 m-0 p-0  h-100 d-grid">
+                                <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                    <span>Senior Citizen Fares</span>
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-2 m-0 p-0  h-100 d-grid">
+                                <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                    <span>Doctors & Nurses Fares</span>
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-2 m-0 p-0  h-100 d-grid">
+                                <label class="check-container d-flex align-items-center justify-content-end flex-row-reverse">
+                                    <span>Double Seat Fares</span>
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web-checkIn ms-auto d-flex align-items-center justify-content-center">
+                        <img src="./img/icons/noun-online-flight-booking-portal-2205383.svg" alt="Calendar">
+                        <span>Web Check-In</span>
+                    </div>
+                </div>
+                
+
+                <div>
+                    <button class=" dash-card-success-btn ">Search</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Dashboard Card Ends -->
+
+        <!-- Eplore Starts -->
+        <div class="explore-header">
+            <span>Explore More</span>
+            <br />
+            <img class="" src="./img/icons/Group 71303.svg" alt="">
+        </div>
+        <div class="card explore-section" >
+                <div class="row h-100">
+                    <div class="col-lg-2  col-12 d-flex align-items-center justify-content-center exp-bord-e">
+                        <div class="explore-icon">
+                            <img class="" src="./img/icons/noun-tour-3636501.svg" alt="">
+                        </div>
+                        <span>Where2Go</span> 
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex align-items-center justify-content-center exp-bord-e">
+                        <div class="explore-icon">
+                            <img class="" src="./img/icons/noun-wallet-2906884.svg" alt="">
+                        </div>
+                        <div>
+                            <span>TripMoney</span>
+                            <br />
+                            <span>Loan Credit and More...</span> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center explore-middle">
+                        <div>
+                            <img class="" src="./img/icons/Image 90.png" alt="">
+                        </div>
+                        <div>
+                            <span>Loan Credit and More...</span>
+                            <br />
+                            <span> Cheapest Flights to Paris, Bali, Tokyo & more...</span> 
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex align-items-center justify-content-center exp-bord-s">
+                        <div class="explore-icon">
+                            <img class="" src="./img/icons/noun-nearby-1932844.svg" alt="">
+                        </div>
+                        <span>Nearby Getways</span> 
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex align-items-center justify-content-center exp-bord-s">
+                        <div class="explore-icon">
+                            <img class="" src="./img/icons/noun-gift-card-2742102.svg" alt="">
+                        </div>
+                        <span>Gift Cards</span> 
+                        
+                    </div>
+                </div>
+        </div>
+        <!--  Eplore Ends -->
+
+
+        <!-- Exclusive Offers Section Start -->
+        <div class="d-block d-lg-flex ex-off-parent mt-5">
+            <span>Exclusive Offers :</span>
+            <div class="d-flex">
+                <div class="ex-off-tab ex-off-tab-active">
+                    Best Offers
+                </div>
+                <div class="ex-off-tab">
+                    Flight
+                </div>
+                <div class="ex-off-tab">
+                    Hotel
+                </div>
+                <div class="ex-off-tab">
+                    Bus
+                </div>
+                <div class="ex-off-tab">
+                    Holiday
+                </div>
+            </div>
+            <div class="ms-auto d-flex pt-2 pb-4 pb-lg-0 justify-content-end justify-content-lg-none ">
+                <span>View All Offers</span>
+                <div class="scroller d-flex align-items-center justify-content-around">
+                    <span><</span>
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+        <hr class="d-none d-lg-block"  />
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="card offer-card">
+                    <div class="d-flex">
+                        <img src="./img/Image 92.png" alt="ex-1">
+                        <div class="ex-card-content mx-3">
+                            <span>New User Offer</span>
+                            <p>Register and Get Discount on Booking First Flight with US</p>
+                            <div class="d-block d-lg-flex align-items-center">
+                                <div class="w-50">Promocode</div>
+                                <div  class="w-100 d-flex justify-content-around align-items-center">
+                                    <span onclick="copyToClipboard(this)">EMTFIRST</span> 
+                                    <img src="./img/icons/noun-copy-1801473.png" alt="copy" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 ms-auto">Valid till 30th Sept, 2022</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card offer-card">
+                    <div class="d-flex">
+                        <img src="./img/Image 95.png" alt="ex-2">
+                        <div class="ex-card-content mx-3">
+                            <span>Make Travel More Rewarding</span>
+                            <p><b class="text-dark">SkipToTheTrip</b> <br/> with endless travel discount on the</p>
+                            <div class="d-block d-lg-flex align-items-center">
+                                <div class="w-50">Promocode</div>
+                                <div  class="w-100 d-flex justify-content-around align-items-center">
+                                    <span onclick="copyToClipboard(this)">EMTCOD</span> 
+                                    <img src="./img/icons/noun-copy-1801473.png" alt="copy" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 ms-auto">Valid till 30th Sept, 2022</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card offer-card">
+                    <div class="d-flex">
+                        <img src="./img/Image 96.png" alt="ex-3">
+                        <span class="badge rounded-pill bg-danger exclusive">Exclusive</span>
+                        <div class="ex-card-content mx-3">
+                            <span>RSWS Match</span>
+                            <p>Register and Get Discount on Booking First Flight with US</p>
+                            <div class="d-block d-lg-flex align-items-center">
+                                <div class="w-50">Promocode</div>
+                                <div  class="w-100 d-flex justify-content-around align-items-center">
+                                    <span onclick="copyToClipboard(this)">EMTTHIRD</span> 
+                                    <img src="./img/icons/noun-copy-1801473.png" alt="copy" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 ms-auto ">Valid till 30th Sept, 2022</div>
+                </div>
+            </div>
+        </div>
+        <!-- Exclusive Offers Section Ends -->
+        
+        <!-- Travel Blogs Section Start -->
+        <div class="d-flex ex-off-parent align-items-center mt-5">
+            <span>Travel Blog</span>
+            <div class="scroller ms-auto d-flex align-items-center justify-content-around">
+                <span><</span>
+                <span>></span>
+            </div>
+        </div>
+        <div class="travel-blog mt-4">
+            <div class="row">
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card travel-card banner-1">
+                       <span class="badge travel-badge rounded-pill text-dark ms-auto">16, September 2022</span>
+                       <div>
+                            <div>
+                                <span>Bali</span>
+                                <p>Lorem ipsum dolor sit amet, con sadipscing elitr, sed diam nonumy eirmod.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span>30 Minute</span><br />
+                                    <span>Suggest Timer</span>
+                                </div>
+                                <span>Explore</span>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card travel-card banner-2">
+                        <span class="badge travel-badge rounded-pill text-dark ms-auto">16, September 2022</span>
+                        <div>
+                             <div>
+                                 <span>Sri Lanka</span>
+                                 <p>Lorem ipsum dolor sit amet, con sadipscing elitr, sed diam nonumy eirmod.</p>
+                             </div>
+                             <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                     <span>30 Minute</span><br />
+                                     <span>Suggest Timer</span>
+                                 </div>
+                                 <span>Explore</span>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card travel-card banner-3">
+                        <span class="badge travel-badge rounded-pill text-dark ms-auto">16, September 2022</span>
+                        <div>
+                             <div>
+                                 <span>Thailand</span>
+                                 <p>Lorem ipsum dolor sit amet, con sadipscing elitr, sed diam nonumy eirmod.</p>
+                             </div>
+                             <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                     <span>30 Minute</span><br />
+                                     <span>Suggest Timer</span>
+                                 </div>
+                                 <span>Explore</span>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card travel-card banner-4">
+                        <span class="badge travel-badge rounded-pill text-dark ms-auto">16, September 2022</span>
+                        <div>
+                             <div>
+                                 <span>Sri Lanka</span>
+                                 <p>Lorem ipsum dolor sit amet, con sadipscing elitr, sed diam nonumy eirmod.</p>
+                             </div>
+                             <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                     <span>30 Minute</span><br />
+                                     <span>Suggest Timer</span>
+                                 </div>
+                                 <span>Explore</span>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Travel Blogs Section Ends -->
+    </div> 
+
+    <!-- Footer Starts Here -->
+    <div class="footer">
+        <div  onclick="window.scrollTo(0, 0);" class="scroll-to-top">
+            <img src="./img/icons/keyboard-arrow-up.svg" alt="up arrow">
+        </div>
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-lg-3 col-12 px-5 px-lg-5">
+                    <img src="./img/logo.svg" alt="Logo">
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+                    <img class="mt-3 sc-links" src="./img/icons/Group 71361.svg" alt="Social Links">
+                </div>
+                <div class="col-lg-5 col-12 px-5 px-lg-2 pt-5 pt-lg-0 ">
+                    <div class="row footer-center">
+                        <div class="col-lg-4 col-6">
+                            <b>Our Products</b>
+                            <br />
+                            <p class="mt-4">Online Flight Booking</p>
+                            <p> Online Hotel Booking </p>
+                            <p>Domestic Airlines</p> 
+                            <p>Top Airline Routes</p>
+                            <p> Partner Programs</p>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <b>Corporate</b>
+                            <br />
+                            <p class="mt-4">FAQs</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy</p> 
+                            <p>About Us</p>
+                            <p> Contact Us</p>
+                            <p>Careers</p> 
+                            <p>Blog</p>
+                            <p> Register Your Property</p>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <b>Hot Airlines</b>
+                            <br />
+                            <p class="mt-4">IndiGo</p>
+                            <p>Go First</p>
+                            <p>SpiceJet</p> 
+                            <p>AirAsia</p>
+                            <p>Vistara</p>
+                            <p>Air</p> 
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 px-5 px-lg-0 pe-lg-5 pt-5 pt-lg-0">
+                    <b>Payment Mode</b>
+                    <div class="d-flex payment-method align-items-center justify-content-lg-evenly pt-3">
+                        <img src="./img/icons/Group 71356.png" alt="Visa">
+                        <img src="./img/icons/MasterCard_Logo.svg (1).png" alt="MC">
+                        <img src="./img/icons/Group 71355.svg" alt="Rupay">
+                        <img src="./img/icons/2560px-JCB_logo.svg.png" alt="JCB">
+                        <img src="./img/icons/Group 71354.png" alt="DC">
+                        <img src="./img/icons/Mask Group 10.png" alt="AE">
+                    </div>
+                    <div class="d-block d-lg-flex justify-content-between align-items-center mt-4">
+                        <div>
+                            <span>Book Tickets Faster</span><br />
+                            <span>Download Our Mobile Apps</span>
+                        </div>
+                        <img class="mt-3 mt-lg-0 gp-button" src="./img/icons/Group 71359.png" alt="Google Play">
+                    </div>
+                    <div class="mt-5">Copyright © 2022 . Relipay Travels All Rights Reserved</div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+     <!-- Footer Ends Here -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
