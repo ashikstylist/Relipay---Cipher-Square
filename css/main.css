@@ -569,9 +569,9 @@ div:has(> .fair-type) {
 .ex-card-content > p + div > div:nth-child(2) > span {
   text-align: left;
   font-size: 18px;
-  padding-left: 10px;
   letter-spacing: 0px;
   color: #000000;
+  padding: 5px 10px;
 }
 
 div:has(> .ex-card-content) > img {
