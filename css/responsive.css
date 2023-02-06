@@ -38,6 +38,11 @@
     margin: auto;
   }
 
+  .view-all-offer {
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+
   .exp-bord-e {
     border-right: 0px !important;
   }
