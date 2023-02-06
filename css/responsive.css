@@ -38,11 +38,6 @@
     margin: auto;
   }
 
-  .view-all-offer {
-    margin-top: 10px;
-    margin-right: 0px;
-  }
-
   .exp-bord-e {
     border-right: 0px !important;
   }
@@ -177,5 +172,10 @@
 
   .ex-card-content > p + div > div:nth-child(2) > span {
     font-size: 16px !important;
+  }
+
+  .owl-item img {
+    display: block;
+    width: auto!important; 
   }
 }

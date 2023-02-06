@@ -73,6 +73,11 @@ body {
   opacity: 1;
 }
 
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto !important;
+}
+
 .nav-menu {
   height: 45px;
   width: 100%;
@@ -533,16 +538,8 @@ div:has(> .fair-type) {
   border-radius: 15px !important;
   border: none !important;
   padding: 20px;
-  margin: 15px 0px;
-}
-
-.view-all-offer {
-  text-align: left;
-  font: normal normal 600 16px/25px Poppins;
-  letter-spacing: 0px;
-  color: #0077ac;
-  margin-right: 20px;
-  margin-top: 4px;
+  margin: 5px;
+  max-width: 441px !important;
 }
 
 .ex-card-content > span {
@@ -574,6 +571,7 @@ div:has(> .fair-type) {
   border: 1px dashed #cdcdcd;
   border-radius: 5px;
   margin-left: 20px;
+  padding-right: 10px;
 }
 
 .ex-card-content > p + div > div:nth-child(2) > span {
@@ -585,7 +583,7 @@ div:has(> .fair-type) {
 }
 
 div:has(> .ex-card-content) > img {
-  width: 132px;
+  width: 132px !important;
   height: 132px;
   padding-left: 10px;
 }
@@ -610,7 +608,7 @@ div:has(> .ex-card-content) > img {
 }
 
 .travel-card {
-  width: 100%;
+  max-width: 326px;
   height: 390px;
   border-radius: 15px !important;
   border: none !important;
